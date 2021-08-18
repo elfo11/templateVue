@@ -3,10 +3,10 @@
     <v-row class="text-center">
       <v-col cols="12">
         <v-text-field
-      label="Main input"
-      :rules="rules"
-      hide-details="auto"
-    ></v-text-field>
+          label="Main input"
+          :rules="rules"
+          hide-details="auto"
+        ></v-text-field>
       </v-col>
     </v-row>
   </v-container>
@@ -15,10 +15,10 @@
 <script>
 export default {
   name: "HelloWorld",
-
-  data: () => ({
-    
-  }),
+  props: {
+    mosartValue: String,
+  },
+  data: () => ({}),
 };
 </script>
 
